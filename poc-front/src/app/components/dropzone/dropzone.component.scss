@@ -1,0 +1,59 @@
+.dropzone{
+  position:relative;
+
+  :after {  pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  :before {
+    position: absolute;
+    bottom: 10px;
+    font-family: 'FreeMono';
+    left: 0;  pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 57px;
+    content: "Drop file here to upload";
+    display: block;
+    margin: 0 auto;
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  input {
+    outline: 2px dashed #000000;
+    outline-offset: -10px;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    text-align: center !important;
+    padding: 100px 0;
+    margin: 0;
+    color:#d8dddd;
+    width: 100% !important;
+    background: #d8dddd;
+
+    :focus{
+      outline: 2px dashed #f20404;  outline-offset: -10px;
+      -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+      transition: outline-offset .15s ease-in-out, background-color .15s linear; border:1px solid #92b0b3;
+    }
+  }
+}
+
+::file-selector-button {
+  display: none;
+}
+
+
